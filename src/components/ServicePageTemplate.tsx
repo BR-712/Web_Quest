@@ -1,22 +1,22 @@
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ChevronRight, type LucideIcon } from "lucide-react";
+import { Phone, Mail, MapPin, ChevronRight, type LucideIcon } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
-import { Phone, Mail, MapPin } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useTranslation } from "react-i18next";
 
 interface SubService {
   title: string;
-  items: string[];
+  itemsKey: string;
   badges?: string[];
 }
 
@@ -30,6 +30,8 @@ interface ServicePageProps {
 }
 
 const ServicePageTemplate = ({ icon: Icon, title, description, breadcrumb, subservices, children }: ServicePageProps) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
@@ -41,15 +43,15 @@ const ServicePageTemplate = ({ icon: Icon, title, description, breadcrumb, subse
           </div>
           <div className="container mx-auto relative z-10 py-12 md:py-16">
             <div className="flex items-center gap-2 text-sm text-[hsl(215,20%,65%)] mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
+              <Link to="/" className="hover:text-white transition-colors">{t("nav.home")}</Link>
               <ChevronRight className="w-3 h-3" />
-              <span>Servicios</span>
+              <span>{t("nav.services")}</span>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-white">{breadcrumb}</span>
+              <span className="text-white">{t(breadcrumb)}</span>
             </div>
             <Icon className="w-12 h-12 text-gold mb-4" />
-            <h1 className="font-heading font-bold text-3xl md:text-[2.625rem] text-white mb-4">{title}</h1>
-            <p className="text-[hsl(215,20%,75%)] text-lg max-w-2xl leading-relaxed">{description}</p>
+            <h1 className="font-heading font-bold text-3xl md:text-[2.625rem] text-white mb-4">{t(title)}</h1>
+            <p className="text-[hsl(215,20%,75%)] text-lg max-w-2xl leading-relaxed">{t(description)}</p>
           </div>
         </section>
 
@@ -57,38 +59,41 @@ const ServicePageTemplate = ({ icon: Icon, title, description, breadcrumb, subse
         <section className="py-12 md:py-20 bg-card">
           <div className="container mx-auto max-w-4xl">
             <Accordion type="multiple" className="space-y-4">
-              {subservices.map((sub, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                >
-                  <AccordionItem value={`sub-${i}`} className="bg-card border border-border rounded-xl px-6 overflow-hidden">
-                    <AccordionTrigger className="font-heading font-semibold text-primary text-left py-5 hover:no-underline">
-                      {sub.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="pb-5">
-                      <ul className="space-y-2 mb-4">
-                        {sub.items.map((item, j) => (
-                          <li key={j} className="flex items-start gap-2 text-sm text-foreground">
-                            <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                      {sub.badges && (
-                        <div className="flex flex-wrap gap-2">
-                          {sub.badges.map((b) => (
-                            <span key={b} className="bg-navy-light text-primary text-xs font-heading font-medium px-3 py-1 rounded-full">{b}</span>
+              {subservices.map((sub, i) => {
+                const items = t(sub.itemsKey, { returnObjects: true }) as string[];
+                return (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                  >
+                    <AccordionItem value={`sub-${i}`} className="bg-card border border-border rounded-xl px-6 overflow-hidden">
+                      <AccordionTrigger className="font-heading font-semibold text-primary text-left py-5 hover:no-underline">
+                        {t(sub.title)}
+                      </AccordionTrigger>
+                      <AccordionContent className="pb-5">
+                        <ul className="space-y-2 mb-4">
+                          {Array.isArray(items) && items.map((item, j) => (
+                            <li key={j} className="flex items-start gap-2 text-sm text-foreground">
+                              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                              {item}
+                            </li>
                           ))}
-                        </div>
-                      )}
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
+                        </ul>
+                        {sub.badges && (
+                          <div className="flex flex-wrap gap-2">
+                            {sub.badges.map((b) => (
+                              <span key={b} className="bg-navy-light text-primary text-xs font-heading font-medium px-3 py-1 rounded-full">{t(b)}</span>
+                            ))}
+                          </div>
+                        )}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                );
+              })}
             </Accordion>
 
             {children}

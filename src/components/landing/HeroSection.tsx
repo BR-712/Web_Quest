@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const scrollToServices = () => {
     document.getElementById("servicios")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-[90vh] md:min-h-[90vh] flex items-center overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)" }}>
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="relative min-h-[90vh] md:min-h-[90vh] flex items-center overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)" }}>
       {/* Decorative triangles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 -right-20 w-96 h-96 opacity-[0.07]" style={{ background: "linear-gradient(180deg, hsl(36,79%,56%) 0%, transparent 100%)", clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }} />
@@ -24,7 +31,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="font-heading font-bold text-4xl md:text-5xl lg:text-[3.75rem] leading-tight text-white"
           >
-            Construimos juntos estrategias para un futuro sostenible
+            {t("hero.title")}
           </motion.h1>
 
           <motion.p
@@ -33,7 +40,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             className="mt-6 text-lg md:text-xl text-[hsl(215,20%,65%)] max-w-2xl leading-relaxed"
           >
-            Consultoría, auditoría y formación en sistemas de gestión para organizaciones que buscan operar de forma segura, eficiente y responsable.
+            {t("hero.subtitle")}
           </motion.p>
 
           <motion.div
@@ -46,18 +53,18 @@ const HeroSection = () => {
               to="/contacto"
               className="inline-flex items-center justify-center bg-gold text-gold-foreground font-heading font-semibold text-base px-8 py-3.5 rounded-lg hover:opacity-90 transition-opacity"
             >
-              Agenda una consulta gratuita
+              {t("hero.cta_secondary")}
             </Link>
             <button
               onClick={scrollToServices}
               className="inline-flex items-center justify-center border-2 border-white/30 text-white font-heading font-medium text-base px-8 py-3.5 rounded-lg hover:bg-white/10 transition-colors"
             >
-              Conoce nuestros servicios
+              {t("hero.cta_primary")}
             </button>
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,13 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Calendar, Building2, Layers, ShieldCheck } from "lucide-react";
-
-const stats = [
-  { icon: Calendar, value: 6, label: "Años de experiencia", prefix: "+" },
-  { icon: Building2, value: 35, label: "Empresas atendidas", prefix: "+" },
-  { icon: Layers, value: 8, label: "Sectores cubiertos", prefix: "+" },
-  { icon: ShieldCheck, value: 10, label: "Estándares ISO", prefix: "+" },
-];
+import { useTranslation } from "react-i18next";
 
 const Counter = ({ target, prefix }: { target: number; prefix: string }) => {
   const [count, setCount] = useState(0);
@@ -31,8 +25,23 @@ const Counter = ({ target, prefix }: { target: number; prefix: string }) => {
 };
 
 const ImpactStats = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    { icon: Calendar, value: 6, label: t("stats.experience"), prefix: "+" },
+    { icon: Building2, value: 35, label: t("stats.companies"), prefix: "+" },
+    { icon: Layers, value: 8, label: t("stats.sectors"), prefix: "+" },
+    { icon: ShieldCheck, value: 10, label: t("stats.standards"), prefix: "+" },
+  ];
+
   return (
-    <section className="py-12 md:py-20 bg-card">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="py-12 md:py-20 bg-card"
+    >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
           {stats.map((stat, i) => (
@@ -53,7 +62,7 @@ const ImpactStats = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

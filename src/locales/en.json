@@ -1,0 +1,351 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Integral Management for a Sustainable Future",
+    "subtitle": "We drive your organization's growth with solutions in management systems, occupational health and safety, and sustainable development.",
+    "cta_primary": "Explore our services",
+    "cta_secondary": "Contact us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions designed to empower your organization",
+    "tags": {
+      "iso9001": "ISO 9001",
+      "iso14001": "ISO 14001",
+      "iso45001": "ISO 45001",
+      "hseq": "HSEQ",
+      "sst": "OHS",
+      "riesgo_quimico": "Chemical Risk",
+      "medicina_laboral": "Occupational Medicine",
+      "pmi": "PMI®",
+      "mejora_continua": "Continuous Improvement",
+      "automatizacion": "Automation",
+      "software": "Software",
+      "aplicativos": "Apps"
+    },
+    "badges": {
+      "decreto_1072_15": "Decree 1072:15",
+      "res_0312_19": "Res.0312:19",
+      "iso_45001_18": "ISO 45001:18",
+      "ruc": "RUC",
+      "norsok": "Norsok",
+      "iso_14001_2015": "ISO 14001:2015",
+      "iso_9001_2015": "ISO 9001:2015",
+      "iso_39001_2012": "ISO 39001:2012"
+    },
+    "consultoria": {
+      "title": "Consulting & Advisory",
+      "desc": "Management systems, integrated audits, and third-party contractor management for safe and continuous operations.",
+      "full_desc": "We accompany you in the development of your organization's processes, providing specialized technical services for a safer operation that guarantees business continuity.",
+      "subservices": {
+        "sistemas": {
+          "title": "Management Systems",
+          "items": [
+            "Comprehensive risk management",
+            "Management System for Corporate Social Responsibility (ISO 26000)",
+            "Legal regulatory requirements in OHS and environmental management",
+            "Integration of HSEQ management systems"
+          ]
+        },
+        "contratacion": {
+          "title": "Third-Party Contractor Management",
+          "items": [
+            "Comprehensive supplier management",
+            "Contractor control",
+            "Supplier audits",
+            "Legal advice on contract execution"
+          ]
+        },
+        "auditorias": {
+          "title": "Integrated Management Systems Audits",
+          "items": [
+            "Environmental management system (Decree 1076:15, ISO 14001:2015)",
+            "Quality Management System (ISO 9001:2015)",
+            "Social responsibility management system (ISO 26000:2010)",
+            "OHS management system (Decree 1072:15, Res.0312:19, ISO 45001:18, RUC, Norsok)"
+          ]
+        }
+      }
+    },
+    "estrategias": {
+      "title": "Strategies & Intervention",
+      "desc": "Risk intervention projects aligned with your organization's context, from road safety to industrial hygiene.",
+      "full_desc": "We design and develop strategies and intervention projects for risks and improvement aligned with your organization's context, guiding responses to potential risks.",
+      "subservices": {
+        "movilidad": {
+          "title": "Safe Mobility",
+          "items": [
+            "Strategic road safety plan",
+            "Risk prevention strategies",
+            "Mobility training",
+            "Public service transport regulations",
+            "Transportation of dangerous goods (Res. 1409)"
+          ]
+        },
+        "quimico": {
+          "title": "Chemical Risk",
+          "items": [
+            "Comprehensive Chemical Risk Management",
+            "GHS (Globally Harmonized System)",
+            "Compatibility matrix",
+            "Classified Areas"
+          ]
+        },
+        "higiene": {
+          "title": "Industrial Hygiene",
+          "items": ["Advisory and intervention", "Traceability"]
+        },
+        "medicina": {
+          "title": "Occupational Medicine",
+          "items": [
+            "Qualification and management of complex cases",
+            "Absenteeism",
+            "Surveillance systems"
+          ]
+        },
+        "otros": {
+          "title": "Other services",
+          "items": [
+            "Defect reduction",
+            "Accident intervention",
+            "Radiation risk",
+            "High-risk tasks"
+          ]
+        }
+      }
+    },
+    "formacion": {
+      "title": "Specialized Training",
+      "desc": "Training programs in management systems, OHS, and PMI® project management for your team's development.",
+      "full_desc": "We believe in training and innovation as transformative tools, generators of change, aiming at the development of business and social processes to enhance continuous improvement.",
+      "subservices": {
+        "gestion": {
+          "title": "Specialized training for management systems development",
+          "items": ["Programs adapted to current regulations and client needs"]
+        },
+        "procesos": {
+          "title": "Process improvement",
+          "items": ["Tools and methodologies for continuous optimization"]
+        },
+        "sst": {
+          "title": "OHS Training Programs",
+          "items": ["Comprehensive training in Occupational Health and Safety"]
+        },
+        "pmi": {
+          "title": "Good practices for PMI® project management",
+          "items": ["Training aligned with Project Management Institute standards"]
+        },
+        "comunidad": {
+          "title": "Healthy community",
+          "items": ["Programs focused on well-being and community health"]
+        },
+        "ludicas": {
+          "title": "Playful campaigns",
+          "items": ["Creative strategies for awareness and learning"]
+        }
+      }
+    },
+    "digital": {
+      "title": "Digital Transformation",
+      "desc": "Process automation and technical advisory to digitize your management systems with modern tools.",
+      "full_desc": "Automation and incorporation of technologies are key to better process performance, making them more efficient, flexible, and reliable.",
+      "subservices": {
+        "automatizacion": {
+          "title": "Advisory on process automation",
+          "items": ["Analysis, design, and implementation of automated flows for management systems"]
+        },
+        "software": {
+          "title": "Technical support/advisory in MS for software development",
+          "items": ["Technical accompaniment to integrate management systems into software solutions"]
+        },
+        "aplicativos": {
+          "title": "Application implementation (Authorized distributors)",
+          "items": ["Installation, configuration, and support of digital tools for business management"]
+        }
+      },
+      "quest_audit": {
+        "tag": "Coming Soon",
+        "title": "QuestAudit — Digital Audit Platform",
+        "desc": "We are developing our own platform that digitizes the entire audit cycle, from planning to finding tracking with artificial intelligence.",
+        "footer": "Coming soon in 2026",
+        "cta": "Interested? Write to us to know more →",
+        "whatsapp_message": "Hello Quest, I am interested in knowing more about QuestAudit."
+      }
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "members": {
+      "jorge": {
+        "role": "Senior Consultant & Lead Auditor",
+        "bio": "Over 10 years of experience in implementing and auditing management systems across various sectors. Expert in integrating ISO standards and optimizing processes for continuous improvement."
+      }
+    },
+    "certs": {
+      "irca": "IRCA",
+      "taproot": "TapRoot",
+      "ruc": "RUC",
+      "norsok": "Norsok"
+    }
+  },
+  "why_quest": {
+    "title": "Why do organizations trust Quest?",
+    "items": {
+      "team": {
+        "title": "Interdisciplinary certified team",
+        "desc": "Auditors with internationally recognized IRCA, TapRoot, and ISO certifications."
+      },
+      "coverage": {
+        "title": "National coverage",
+        "desc": "We reach anywhere in Colombia leveraging technology and digital tools."
+      },
+      "alliances": {
+        "title": "Strategic alliances",
+        "desc": "We work in alliance with insurers like Suramericana, multiplying our reach."
+      },
+      "digital": {
+        "title": "Focus on digital transformation",
+        "desc": "We incorporate technology to make your processes more efficient, flexible, and reliable."
+      },
+      "multisector": {
+        "title": "Multisectoral experience",
+        "desc": "Mining, transport, health, education, construction, logistics, trade, and more."
+      }
+    }
+  },
+  "stats": {
+    "experience": "Years of experience",
+    "companies": "Companies served",
+    "sectors": "Sectors covered",
+    "standards": "ISO Standards"
+  },
+  "clients": {
+    "title": "Companies that trust Quest",
+    "subtitle": "We have worked with more than 35 organizations strengthening their sustainable development.",
+    "alliance": "In alliance with Seguros de Vida Suramericana S.A."
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "We work permanently on our team of collaborators, relying on training and innovation as transformative tools.",
+    "members": {
+      "jorge": {
+        "role": "Business Partner · Lead Auditor",
+        "bio": "Industrial Engineer with over 14 years of experience leading quality, environmental, and OHS management processes in sectors such as mining, transport, metalworking, and logistics. IRCA Lead Auditor certified in ISO 9001, 14001, 45001, and 39001."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are ready to help. Write to us and a consultant will contact you in less than 24 hours.",
+    "cta_title": "Ready to build together?",
+    "cta_desc": "Tell us about your organization and a consultant will contact you in less than 24 hours.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company",
+      "size": "Company Size",
+      "service": "Service of Interest",
+      "select": "Select",
+      "phone": "Phone Number",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "submitted_title": "Message Sent!",
+      "submitted_desc": "We will contact you soon.",
+      "success": "Message sent successfully!",
+      "error": "There was an error sending the message. Please try again.",
+      "placeholders": {
+        "name": "Your Name",
+        "email": "email@company.com",
+        "company": "Company Name",
+        "message": "Tell us about your project..."
+      },
+      "sizes": {
+        "1-10": "1-10 employees",
+        "11-50": "11-50 employees",
+        "51-200": "51-200 employees",
+        "200+": "200+ employees"
+      },
+      "services_options": {
+         "other": "Other"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "+57 317 680 0661",
+      "email": "info@questjuntos.com",
+      "address": "Barranquilla, Colombia",
+      "whatsapp": "Chat on WhatsApp"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "description": "Together we build strategies and solutions for a sustainable future.",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "copyright": "© {{year}} Quest Strategies and Sustainability S.A.S. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    }
+  },
+  "about_us": {
+    "title": "Meet Quest",
+    "subtitle": "We are the ones who, together with you, build strategies and solutions for a sustainable future.",
+    "purpose": {
+      "title": "Our Purpose",
+      "p1": "At Quest, our purpose is to build joint strategies and solutions with organizations that promote balance in the development of their operations to achieve a sustainable future.",
+      "p2": "We contribute to raising the level of awareness and being more socially responsible among organizations, their clients, suppliers, our collaborators, and the community in general."
+    },
+    "what_we_do": {
+      "title": "What We Do",
+      "p1": "We are in constant search of best practices for responsible process management, developing synergistic actions with our stakeholders, consolidating relationships of trust that contribute to more competitive and sustainable environments.",
+      "p2": "We help our clients develop solutions tailored to their particular characteristics, offering management models for small, medium, and large companies."
+    },
+    "how_we_work": {
+      "title": "How We Work",
+      "items": {
+        "sinergia": {
+          "title": "Synergy",
+          "desc": "Collaborative work with our clients"
+        },
+        "procesos": {
+          "title": "Process Management",
+          "desc": "Structured and measurable approach"
+        },
+        "pmi": {
+          "title": "PMI® Best Practices",
+          "desc": "Professional project management"
+        },
+        "confidencialidad": {
+          "title": "Confidentiality",
+          "desc": "Secure information handling"
+        }
+      }
+    },
+    "closing_quote": "\"Contributing together to economic growth, environmental care, and social well-being.\""
+  },
+  "contact_page": {
+    "map_label": "Map — Barranquilla, Colombia",
+    "whatsapp_message": "Hello Quest, I would like to receive information about your services."
+  },
+  "whatsapp_button": {
+    "aria_label": "Contact via WhatsApp",
+    "message": "Hello Quest, I would like to receive information about your services."
+  },
+  "not_found": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "return": "Return to Home"
+  },
+  "service_page": {
+    "cta_title": "Interested in this service?",
+    "cta_desc": "Tell us about your organization and we will advise you on {{service}}."
+  }
+}

@@ -13,6 +13,7 @@ import EstrategiasIntervencion from "./pages/services/EstrategiasIntervencion";
 import FormacionEspecializada from "./pages/services/FormacionEspecializada";
 import TransformacionDigital from "./pages/services/TransformacionDigital";
 import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
 
@@ -31,16 +32,18 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/servicios/consultoria-y-asesoria" element={<ConsultoriaAsesoria />} />
-          <Route path="/servicios/estrategias-e-intervencion" element={<EstrategiasIntervencion />} />
-          <Route path="/servicios/formacion-especializada" element={<FormacionEspecializada />} />
-          <Route path="/servicios/transformacion-digital" element={<TransformacionDigital />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/servicios/consultoria-y-asesoria" element={<ConsultoriaAsesoria />} />
+            <Route path="/servicios/estrategias-e-intervencion" element={<EstrategiasIntervencion />} />
+            <Route path="/servicios/formacion-especializada" element={<FormacionEspecializada />} />
+            <Route path="/servicios/transformacion-digital" element={<TransformacionDigital />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

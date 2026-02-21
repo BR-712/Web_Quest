@@ -12,7 +12,6 @@ import ContactSection from "@/components/landing/ContactSection";
 const Index = () => {
   return (
     <>
-      <Navbar />
       <main>
         <HeroSection />
         <ImpactStats />
@@ -22,8 +21,6 @@ const Index = () => {
         <TeamSection />
         <ContactSection />
       </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   );
 };

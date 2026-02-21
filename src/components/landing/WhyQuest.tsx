@@ -1,17 +1,26 @@
 import { motion } from "framer-motion";
 import { Users, MapPin, Handshake, Cpu, Factory } from "lucide-react";
-
-const differentiators = [
-  { icon: Users, title: "Equipo interdisciplinario certificado", desc: "Auditores con certificaciones IRCA, TapRoot e ISO reconocidas internacionalmente." },
-  { icon: MapPin, title: "Cobertura nacional", desc: "Llegamos a cualquier lugar de Colombia aprovechando la tecnología y herramientas digitales." },
-  { icon: Handshake, title: "Alianzas estratégicas", desc: "Trabajamos en alianza con aseguradoras como Suramericana, multiplicando nuestro alcance." },
-  { icon: Cpu, title: "Enfoque en transformación digital", desc: "Incorporamos tecnología para hacer tus procesos más eficientes, flexibles y confiables." },
-  { icon: Factory, title: "Experiencia multisectorial", desc: "Minería, transporte, salud, educación, construcción, logística, comercio y más." },
-];
+import { useTranslation } from "react-i18next";
 
 const WhyQuest = () => {
+  const { t } = useTranslation();
+
+  const differentiators = [
+    { icon: Users, title: t("why_quest.items.team.title"), desc: t("why_quest.items.team.desc") },
+    { icon: MapPin, title: t("why_quest.items.coverage.title"), desc: t("why_quest.items.coverage.desc") },
+    { icon: Handshake, title: t("why_quest.items.alliances.title"), desc: t("why_quest.items.alliances.desc") },
+    { icon: Cpu, title: t("why_quest.items.digital.title"), desc: t("why_quest.items.digital.desc") },
+    { icon: Factory, title: t("why_quest.items.multisector.title"), desc: t("why_quest.items.multisector.desc") },
+  ];
+
   return (
-    <section className="py-12 md:py-20 bg-card">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="py-12 md:py-20 bg-card"
+    >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
           {/* Content */}
@@ -22,7 +31,7 @@ const WhyQuest = () => {
               viewport={{ once: true }}
               className="font-heading font-bold text-3xl md:text-4xl text-primary mb-10"
             >
-              ¿Por qué las organizaciones confían en Quest?
+              {t("why_quest.title")}
             </motion.h2>
 
             <div className="space-y-6">
@@ -57,7 +66,7 @@ const WhyQuest = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

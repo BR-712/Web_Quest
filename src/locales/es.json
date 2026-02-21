@@ -1,0 +1,342 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Gestión Integral para un Futuro Sostenible",
+    "subtitle": "Impulsamos el crecimiento de tu organización con soluciones en sistemas de gestión, seguridad y salud en el trabajo, y desarrollo sostenible.",
+    "cta_primary": "Conoce nuestros servicios",
+    "cta_secondary": "Contáctanos"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones integrales diseñadas para potenciar tu organización",
+    "tags": {
+      "iso9001": "ISO 9001",
+      "iso14001": "ISO 14001",
+      "iso45001": "ISO 45001",
+      "hseq": "HSEQ",
+      "sst": "SST",
+      "riesgo_quimico": "Riesgo Químico",
+      "medicina_laboral": "Medicina Laboral",
+      "pmi": "PMI®",
+      "mejora_continua": "Mejora Continua",
+      "automatizacion": "Automatización",
+      "software": "Software",
+      "aplicativos": "Aplicativos"
+    },
+    "badges": {
+      "decreto_1072_15": "Decreto 1072:15",
+      "res_0312_19": "Res.0312:19",
+      "iso_45001_18": "ISO 45001:18",
+      "ruc": "RUC",
+      "norsok": "Norsok",
+      "iso_14001_2015": "ISO 14001:2015",
+      "iso_9001_2015": "ISO 9001:2015",
+      "iso_39001_2012": "ISO 39001:2012"
+    },
+    "consultoria": {
+      "title": "Consultoría y Asesoría",
+      "desc": "Sistemas de gestión, auditorías integradas y gestión de contratación con terceros para operaciones seguras y continuas.",
+      "full_desc": "Te acompañamos en el desarrollo de los procesos de tu organización, brindando servicios técnicos especializados para una operación más segura y que garantice la continuidad del negocio.",
+      "subservices": {
+        "sistemas": {
+          "title": "Sistemas de Gestión",
+          "items": [
+            "Gestión integral de riesgos",
+            "Sistema de Gestión para la Responsabilidad social empresarial (ISO 26000)",
+            "Requisitos normativos legales en SST y gestión ambiental",
+            "Integración de sistemas de gestión HSEQ"
+          ]
+        },
+        "contratacion": {
+          "title": "Gestión de la Contratación con Terceros",
+          "items": [
+            "Gestión integral de proveedores",
+            "Control de contratistas",
+            "Auditorías a proveedores",
+            "Asesoría jurídica en realización de contratos"
+          ]
+        },
+        "auditorias": {
+          "title": "Auditorías de Sistemas de Gestión Integradas",
+          "items": [
+            "Sistema de gestión ambiental (Decreto 1076:15, ISO 14001:2015)",
+            "Sistema de Gestión de Calidad (ISO 9001:2015)",
+            "Sistema de Gestión de responsabilidad social (ISO 26000:2010)",
+            "Sistema de gestión en SST (Decreto 1072:15, Res.0312:19, ISO 45001:18, RUC, Norsok)"
+          ]
+        }
+      }
+    },
+    "estrategias": {
+      "title": "Estrategias e Intervención",
+      "desc": "Proyectos de intervención de riesgos alineados al contexto de tu organización, desde seguridad vial hasta higiene industrial.",
+      "full_desc": "Diseñamos y desarrollamos estrategias y proyectos de intervención de riesgos y mejora alineados al contexto de tu organización, orientando las respuestas a riesgos potenciales.",
+      "subservices": {
+        "movilidad": {
+          "title": "Movilidad Segura",
+          "items": [
+            "Plan estratégico de seguridad vial",
+            "Estrategias de prevención de riesgo",
+            "Formación en movilidad",
+            "Normatividad transporte en servicio público",
+            "Transporte de mercancías peligrosas (Res. 1409)"
+          ]
+        },
+        "quimico": {
+          "title": "Riesgo Químico",
+          "items": [
+            "Gestión integral del Riesgo Químico",
+            "SGA (Sistema Globalmente Armonizado)",
+            "Matriz de compatibilidad",
+            "Áreas Clasificadas"
+          ]
+        },
+        "higiene": {
+          "title": "Higiene Industrial",
+          "items": ["Asesoría e intervención", "Trazabilidad"]
+        },
+        "medicina": {
+          "title": "Medicina Laboral",
+          "items": [
+            "Calificación y manejo de casos complejos",
+            "Ausentismo",
+            "Sistemas de vigilancia"
+          ]
+        },
+        "otros": {
+          "title": "Otros servicios",
+          "items": [
+            "Disminución de defectos",
+            "Intervención de accidentalidad",
+            "Riesgo con Radiaciones",
+            "Tareas de alto riesgo"
+          ]
+        }
+      }
+    },
+    "formacion": {
+      "title": "Formación Especializada",
+      "desc": "Programas de formación en sistemas de gestión, SST y gestión de proyectos PMI® para el desarrollo de tu equipo.",
+      "full_desc": "Creemos en la formación e innovación como herramientas transformadoras, generadoras de cambio, apuntando al desarrollo de procesos empresariales y sociales para potencializar la mejora continua.",
+      "subservices": {
+        "gestion": {
+          "title": "Formación especializada para el desarrollo de sistemas de gestión",
+          "items": ["Programas adaptados a la normativa vigente y necesidades del cliente"]
+        },
+        "procesos": {
+          "title": "Mejora de procesos",
+          "items": ["Herramientas y metodologías para la optimización continua"]
+        },
+        "sst": {
+          "title": "Programas de Formación en SST",
+          "items": ["Capacitación integral en Seguridad y Salud en el Trabajo"]
+        },
+        "pmi": {
+          "title": "Buenas prácticas para la gestión de proyectos PMI®",
+          "items": ["Formación alineada a los estándares del Project Management Institute"]
+        },
+        "comunidad": {
+          "title": "Comunidad saludable",
+          "items": ["Programas enfocados en bienestar y salud comunitaria"]
+        },
+        "ludicas": {
+          "title": "Campañas lúdicas",
+          "items": ["Estrategias creativas de sensibilización y aprendizaje"]
+        }
+      }
+    },
+    "digital": {
+      "title": "Transformación Digital",
+      "desc": "Automatización de procesos y asesoría técnica para digitalizar tus sistemas de gestión con herramientas modernas.",
+      "full_desc": "La automatización e incorporación de tecnologías son claves para un mejor desempeño de los procesos, haciendo que estos sean más eficientes, flexibles y confiables.",
+      "subservices": {
+        "automatizacion": {
+          "title": "Asesoría en automatización de procesos",
+          "items": ["Análisis, diseño e implementación de flujos automatizados para sistemas de gestión"]
+        },
+        "software": {
+          "title": "Soporte/asesoría técnica en SG para desarrollo de software",
+          "items": ["Acompañamiento técnico para integrar sistemas de gestión en soluciones de software"]
+        },
+        "aplicativos": {
+          "title": "Implementación de aplicativos (Distribuidores autorizados)",
+          "items": ["Instalación, configuración y soporte de herramientas digitales para gestión empresarial"]
+        }
+      },
+      "quest_audit": {
+        "tag": "Próximamente",
+        "title": "QuestAudit — Plataforma Digital de Auditoría",
+        "desc": "Estamos desarrollando una plataforma propia que digitaliza el ciclo completo de auditoría, desde la planificación hasta el seguimiento de hallazgos con inteligencia artificial.",
+        "footer": "Próximamente en 2026",
+        "cta": "¿Te interesa? Escríbenos para saber más →",
+        "whatsapp_message": "Hola Quest, me interesa saber más sobre QuestAudit."
+      }
+    }
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "description": "Trabajamos de manera permanente en nuestro equipo de colaboradores, apoyándonos en la formación e innovación como herramientas transformadoras.",
+    "members": {
+      "jorge": {
+        "role": "Business Partner · Lead Auditor",
+        "bio": "Ingeniero Industrial con más de 14 años de experiencia liderando procesos de gestión de calidad, ambiental y SST en sectores como minería, transporte, metalmecánica y logística. Lead Auditor IRCA certificado en ISO 9001, 14001, 45001 y 39001."
+      }
+    },
+    "certs": {
+      "irca": "IRCA",
+      "taproot": "TapRoot",
+      "ruc": "RUC",
+      "norsok": "Norsok"
+    }
+  },
+  "why_quest": {
+    "title": "¿Por qué las organizaciones confían en Quest?",
+    "items": {
+      "team": {
+        "title": "Equipo interdisciplinario certificado",
+        "desc": "Auditores con certificaciones IRCA, TapRoot e ISO reconocidas internacionalmente."
+      },
+      "coverage": {
+        "title": "Cobertura nacional",
+        "desc": "Llegamos a cualquier lugar de Colombia aprovechando la tecnología y herramientas digitales."
+      },
+      "alliances": {
+        "title": "Alianzas estratégicas",
+        "desc": "Trabajamos en alianza con aseguradoras como Suramericana, multiplicando nuestro alcance."
+      },
+      "digital": {
+        "title": "Enfoque en transformación digital",
+        "desc": "Incorporamos tecnología para hacer tus procesos más eficientes, flexibles y confiables."
+      },
+      "multisector": {
+        "title": "Experiencia multisectorial",
+        "desc": "Minería, transporte, salud, educación, construcción, logística, comercio y más."
+      }
+    }
+  },
+  "stats": {
+    "experience": "Años de experiencia",
+    "companies": "Empresas atendidas",
+    "sectors": "Sectores cubiertos",
+    "standards": "Estándares ISO"
+  },
+  "clients": {
+    "title": "Empresas que confían en Quest",
+    "subtitle": "Hemos trabajado con más de 35 organizaciones fortaleciendo su desarrollo sostenible.",
+    "alliance": "En alianza con Seguros de Vida Suramericana S.A."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos listos para ayudarte. Escríbenos y un consultor te contactará en menos de 24 horas.",
+    "cta_title": "¿Listo para construir juntos?",
+    "cta_desc": "Cuéntanos sobre tu organización y un consultor se pondrá en contacto contigo en menos de 24 horas.",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "size": "Tamaño de empresa",
+      "service": "Servicio de interés",
+      "select": "Seleccionar",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "submitted_title": "¡Mensaje enviado!",
+      "submitted_desc": "Te contactaremos pronto.",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+      "placeholders": {
+        "name": "Tu nombre",
+        "email": "correo@empresa.com",
+        "company": "Nombre de tu empresa",
+        "message": "Cuéntanos sobre tu proyecto..."
+      },
+      "sizes": {
+        "1-10": "1-10 empleados",
+        "11-50": "11-50 empleados",
+        "51-200": "51-200 empleados",
+        "200+": "200+ empleados"
+      },
+      "services_options": {
+         "other": "Otro"
+      }
+    },
+    "info": {
+      "title": "Datos de contacto",
+      "phone": "+57 317 680 0661",
+      "email": "info@questjuntos.com",
+      "address": "Barranquilla, Colombia",
+      "whatsapp": "Escríbenos por WhatsApp"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "description": "Junto a ti construimos estrategias y soluciones para un futuro sostenible.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "copyright": "© {{year}} Quest Estrategias y Sostenibilidad S.A.S. Todos los derechos reservados.",
+    "links": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos y Condiciones"
+    }
+  },
+  "about_us": {
+    "title": "Conoce a Quest",
+    "subtitle": "Somos quienes junto a ti construyen estrategias y soluciones para un futuro sostenible.",
+    "purpose": {
+      "title": "Nuestro Propósito",
+      "p1": "En Quest tenemos como propósito construir estrategias y soluciones conjuntas con las organizaciones, que promuevan un equilibrio en el desarrollo de sus operaciones para lograr un futuro sostenible.",
+      "p2": "Contribuimos a que las organizaciones, sus clientes, proveedores, nuestros colaboradores y la comunidad en general, elevemos el nivel de conciencia y seamos socialmente más responsables."
+    },
+    "what_we_do": {
+      "title": "Lo que hacemos",
+      "p1": "Nos mantenemos en la búsqueda permanente de las mejores prácticas de gestión de procesos responsables, desarrollando acciones sinérgicas con nuestras partes interesadas, consolidando relaciones de confianza que contribuyan a entornos más competitivos y sostenibles.",
+      "p2": "Ayudamos a nuestros clientes a desarrollar soluciones ajustadas a sus características particulares, ofreciendo modelos de gestión para pequeñas, medianas y grandes empresas."
+    },
+    "how_we_work": {
+      "title": "Cómo Trabajamos",
+      "items": {
+        "sinergia": {
+          "title": "Sinergia",
+          "desc": "Trabajo colaborativo con nuestros clientes"
+        },
+        "procesos": {
+          "title": "Gestión por procesos",
+          "desc": "Enfoque estructurado y medible"
+        },
+        "pmi": {
+          "title": "Mejores prácticas PMI®",
+          "desc": "Gestión de proyectos profesional"
+        },
+        "confidencialidad": {
+          "title": "Confidencialidad",
+          "desc": "Manejo seguro de la información"
+        }
+      }
+    },
+    "closing_quote": "\"Aportar juntos al crecimiento de la economía, el cuidado del medio ambiente y el bienestar social.\""
+  },
+  "contact_page": {
+    "map_label": "Mapa — Barranquilla, Colombia",
+    "whatsapp_message": "Hola Quest, me gustaría recibir información sobre sus servicios."
+  },
+  "whatsapp_button": {
+    "aria_label": "Contactar por WhatsApp",
+    "message": "Hola Quest, me gustaría recibir información sobre sus servicios."
+  },
+  "not_found": {
+    "title": "404",
+    "message": "¡Vaya! Página no encontrada",
+    "return": "Volver al Inicio"
+  },
+  "service_page": {
+    "cta_title": "¿Te interesa este servicio?",
+    "cta_desc": "Cuéntanos sobre tu organización y te asesoraremos en {{service}}."
+  }
+}
