@@ -1,5 +1,7 @@
 import { useState, FormEvent } from "react";
 import { useTranslation } from "react-i18next";
+import { getSupabase } from "@/lib/supabase";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -22,25 +24,49 @@ const ContactForm = () => {
     t("contact.form.sizes.200+"),
   ];
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formData = new FormData(form);
+    
+    // Validación básica
     const required = ["name", "email", "company"];
     const newErrors: Record<string, boolean> = {};
     required.forEach((f) => {
-      if (!data.get(f)?.toString().trim()) newErrors[f] = true;
+      if (!formData.get(f)?.toString().trim()) newErrors[f] = true;
     });
+    
     if (Object.keys(newErrors).length) {
       setErrors(newErrors);
       return;
     }
+    
     setErrors({});
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      const supabase = getSupabase();
+      
+      const { error } = await supabase.from('contacts').insert({
+        name: formData.get('name')?.toString(),
+        email: formData.get('email')?.toString(),
+        company: formData.get('company')?.toString(),
+        company_size: formData.get('size')?.toString(),
+        service_interest: formData.get('service')?.toString(),
+        message: formData.get('message')?.toString(),
+      });
+
+      if (error) throw error;
+
       setSubmitted(true);
-    }, 1500);
+      toast.success(t("contact.form.submitted_title"));
+    } catch (error: any) {
+      console.error('Error sending message:', error);
+      // Mostrar el mensaje real del error para facilitar la depuración
+      toast.error(`Error: ${error.message || "No se pudo enviar el mensaje. Verifica tu conexión."}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -51,6 +77,12 @@ const ContactForm = () => {
         </div>
         <h3 className="font-heading font-bold text-xl text-primary mb-2">{t("contact.form.submitted_title")}</h3>
         <p className="text-muted-foreground">{t("contact.form.submitted_desc")}</p>
+        <button 
+          onClick={() => setSubmitted(false)}
+          className="mt-6 text-sm text-primary underline hover:text-accent transition-colors"
+        >
+          Enviar otro mensaje
+        </button>
       </div>
     );
   }

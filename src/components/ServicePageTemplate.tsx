@@ -2,9 +2,6 @@ import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, ChevronRight, type LucideIcon } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
 import {
   Accordion,
@@ -34,10 +31,8 @@ const ServicePageTemplate = ({ icon: Icon, title, description, breadcrumb, subse
 
   return (
     <>
-      <Navbar />
-      <main>
-        {/* Hero */}
-        <section className="relative flex items-end overflow-hidden pt-20" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)", minHeight: "40vh" }}>
+      {/* Hero */}
+      <section className="relative flex items-end overflow-hidden pt-20" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)", minHeight: "40vh" }}>
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute -top-10 -right-10 w-64 h-64 opacity-[0.05]" style={{ background: "hsl(36,79%,56%)", clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }} />
           </div>
@@ -125,9 +120,6 @@ const ServicePageTemplate = ({ icon: Icon, title, description, breadcrumb, subse
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   );
 };

@@ -2,9 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
 
 const Contacto = () => {
@@ -12,10 +9,8 @@ const Contacto = () => {
 
   return (
     <>
-      <Navbar />
-      <main>
-        {/* Hero */}
-        <section className="relative flex items-end overflow-hidden pt-20" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)", minHeight: "40vh" }}>
+      {/* Hero */}
+      <section className="relative flex items-end overflow-hidden pt-20" style={{ background: "linear-gradient(135deg, hsl(221,53%,23%) 0%, hsl(222,58%,11%) 100%)", minHeight: "40vh" }}>
           <div className="container mx-auto relative z-10 py-12 md:py-16">
             <div className="flex items-center gap-2 text-sm text-[hsl(215,20%,65%)] mb-6">
               <Link to="/" className="hover:text-white transition-colors">{t("nav.home")}</Link>
@@ -65,8 +60,6 @@ const Contacto = () => {
           </div>
         </section>
       </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   );
 };
